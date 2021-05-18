@@ -10,6 +10,7 @@
 body{
   font-family: Georgia, 'Times New Roman', Times, serif;
   background: url("../img/bg_01.jpg") no-repeat;
+  background-size: cover;
 }
 
 form{
@@ -17,12 +18,16 @@ form{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: greenyellow;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  padding: 20px;
 }
 
 h1{
   font-size: 35px;
-  border-bottom: 1px solid yellow;
+  border-bottom: 3px solid yellow;
   padding: 10px 0;
   margin: 10px 0;
 }
@@ -30,18 +35,19 @@ h1{
 .input_grp{
   padding: 10px 0;
   margin: 10px 0;
-
 }
 
 form input{
   border: none;
+  width: 200px;
+  height: 30px;
   border-bottom: 1px solid orangered;
   background-color: transparent;
   color: aliceblue;
   outline: none;
   float: left;
-  margin: 5px;
-  width: 90px;
+  margin: 10px;
+  padding: 10px;
 }
 
 form input:focus{
@@ -55,3 +61,21 @@ form input:focus{
   text-align: center;
 }
 
+/* Button Style */
+.btn{
+  margin: 10px;
+  padding: 10px;
+  float: left;
+  cursor: pointer;
+  background-color: orangered;
+  color: aliceblue;
+  font-weight: bold;
+  border: none;
+  font-size: 20px;
+  border-radius: 25% 0%;
+  transition: .5s ease-in-out;
+}
+
+.btn:hover{
+  transform: scale(1.10);
+}
