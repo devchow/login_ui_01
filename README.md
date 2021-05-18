@@ -1,4 +1,4 @@
-# LOGIN UI 01
+# LOGIN UI
 
 ## This is just a simple login UI
 
