@@ -1,11 +1,14 @@
+/* IMporting Font Awesome Links -> icons */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
+/* Main CSS */
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Body */
 
 body{
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -13,6 +16,7 @@ body{
   background-size: cover;
 }
 
+/* Form */
 form{
   position: absolute;
   top: 50%;
@@ -21,33 +25,42 @@ form{
   color: greenyellow;
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
   padding: 20px;
+  border-radius: 15% 0;
+  background-color: black;
+  opacity: 0.4;
 }
 
+/* Form Heading */
 h1{
-  font-size: 35px;
-  border-bottom: 3px solid yellow;
+  font-size: 30px;
+  border-bottom: 4px solid yellow;
   padding: 10px 0;
   margin: 10px 0;
+  color: orangered;
 }
 
 .input_grp{
-  padding: 10px 0;
-  margin: 10px 0;
+  padding: 5px 0;
+  margin: 5px 0;
 }
 
 form input{
   border: none;
   width: 200px;
   height: 30px;
-  border-bottom: 1px solid orangered;
+  border-bottom: 2px solid orangered;
   background-color: transparent;
   color: aliceblue;
   outline: none;
   float: left;
   margin: 10px;
   padding: 10px;
+}
+
+form input::placeholder{
+  color: greenyellow;
+  font-size: 18px;
 }
 
 form input:focus{
@@ -59,6 +72,8 @@ form input:focus{
   float: left;
   width: 30px;
   text-align: center;
+  color: orangered;
+  margin-top: 15px;
 }
 
 /* Button Style */
@@ -79,3 +94,85 @@ form input:focus{
 .btn:hover{
   transform: scale(1.10);
 }
+
+/* Media Queries */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+  body{
+    background-position: absolute;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .input_grp{
+    margin: 5px 0;
+    padding: 5px 0;
+  }
+
+  .input_grp i{
+    margin-bottom: -25px;
+  }
+
+  form input{
+    margin-left: 20px;
+    width: 180px;
+  }
+
+  h1{
+    font-size: 25px;
+    border-bottom: 3px solid yellowgreen;
+  }
+
+  .btn{
+    font-size: 15px;
+  }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body{
+    background-position: absolute;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .input_grp{
+    margin: 8px 0;
+    padding: 8px 0;
+  }
+
+  .input_grp i{
+    margin-bottom: -25px;
+  }
+
+  form input{
+    width: 190px;
+  }
+
+  h1{
+    font-size: 27px;
+    border-bottom: 3px solid yellowgreen;
+  }
+
+  .btn{
+    font-size: 18px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  /* Some code here */
+  body{
+  height: 100vh;
+  }
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 992px) and (max-width: 1200px) { 
+/* Some code here */
+body{
+  height: 100vh;
+  }
+ }
