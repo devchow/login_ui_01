@@ -1,7 +1,57 @@
-body{
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+*{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background: url("../img/bg_01.jpg");
+  background: url("../img/bg_01.jpg") no-repeat;
+}
+
+form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+h1{
+  font-size: 35px;
+  border-bottom: 1px solid yellow;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.input_grp{
+  padding: 10px 0;
+  margin: 10px 0;
+
+}
+
+form input{
+  border: none;
+  border-bottom: 1px solid orangered;
+  background-color: transparent;
+  color: aliceblue;
+  outline: none;
+  float: left;
+  margin: 5px;
+  width: 90px;
+}
+
+form input:focus{
+  outline: none;
+}
+
+
+.input_grp i{
+  float: left;
+  width: 30px;
+  text-align: center;
 }
 
